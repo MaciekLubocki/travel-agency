@@ -5,7 +5,7 @@ import Icon from '../../common/Icon/Icon';
 
 import styles from './OrderOption.scss';
 
-const OrderOptionIcons = (values, required, currentValue, setOptionValue) => (
+const OrderOptionIcons = ({values, required, currentValue, setOptionValue}) => (
   <div className={styles.component}>
     {required ? '' : (
       <div
