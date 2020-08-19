@@ -4,7 +4,11 @@ import PropTypes from 'prop-types';
 import styles from './OrderOption.scss';
 
 const OrderOptionText = ({setOptionValue}) => (
-  <input className={styles.input} onChange={(event => setOptionValue(event.currentTarget.value))} />
+  <input 
+    type="text"
+    className={styles.input} 
+    onChange={(event => setOptionValue(event.currentTarget.value))} 
+  />
 );
 
 OrderOptionText.propTypes = {
